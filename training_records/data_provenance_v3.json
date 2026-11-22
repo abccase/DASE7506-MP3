@@ -1,0 +1,66 @@
+{
+  "prompt_contract": "v2-rich-chat (v3 surgical balance)",
+  "split_used": "train_only",
+  "unique_task_ids": 479,
+  "unique_db_ids": 118,
+  "total_examples": 1833,
+  "fp_audit_cand_hints_balance": {
+    "tp_keep": 106,
+    "fp_rewrite": 322
+  },
+  "warning_tag_counts": {
+    "ORDERED_REQUIRED": 150,
+    "UNGROUNDED_LITERAL": 319,
+    "LITERAL_MISMATCH": 104,
+    "NON_FK_JOIN": 273,
+    "LITERAL_WRONG_COLUMN": 50,
+    "NEGATION_NEQ_ON_JOIN": 15
+  },
+  "regime_counts": {
+    "orig_hard_repair": 282,
+    "orig_allfail_fullctx": 80,
+    "hint_repair": 125,
+    "sem_corrupt_repair": 511,
+    "multi_turn_retry": 276,
+    "audit_fp_synth": 257,
+    "orig_compositional_boost": 38,
+    "audit_fp_real": 105,
+    "audit_fp_real_v4": 33,
+    "audit_tp_keep": 126
+  },
+  "top_corrupt_counts": {
+    "fail:extra_join": 140,
+    "fail:bogus_join_key": 58,
+    "fp:bogus_join_key": 47,
+    "fail:swap_table": 47,
+    "fp:extra_join": 42,
+    "fail:drop_bridge_join": 32,
+    "fail:literal_mismatch": 31,
+    "fp:literal_mismatch": 30,
+    "fail:swap_column": 27,
+    "fail:having_in_where": 22,
+    "fp:drop_order_by": 18,
+    "fp:swap_column": 18,
+    "fail:spurious_where": 17,
+    "fail:literal_wrong_col_sibling": 17,
+    "fail:literal_wrong_col_joined": 17,
+    "fail:proj_extra_col": 16,
+    "fail:swap_agg": 13,
+    "fp:literal_wrong_col_sibling": 13,
+    "fp:flip_order_dir": 12,
+    "fp:spurious_distinct": 12,
+    "fp:literal_wrong_col_joined": 11,
+    "fp:swap_agg": 11,
+    "fail:notin_to_neq_join": 11,
+    "fail:subq_agg_to_having": 9,
+    "fail:intersect_to_union": 9
+  },
+  "source_files_sha256": {
+    "train.jsonl": "562d6d54cbfac83829cf528a3b8ca5f101994c9fe5b1a502519beba328900f65",
+    "train_references.json": "def39effca9b1efe78f7316d71739111b8c8290dd0897db5e6655293fca24da7",
+    "repair_hints.json": "cedf7056f9248bc6296ee80bc03e2a7744c119111f640d8596ea195c5d1e6b03",
+    "public_results.json": "1dba955aab6ef8f6cbe4f05bad697f513929400f262afbc1bd6bd4f37efba8c2",
+    "manifest.json": "bf7a517249ebe31b9cad8cbf5d6598fde98316d89f9aa1172cae3ad83289a6bc"
+  },
+  "elapsed_seconds": 23.15
+}

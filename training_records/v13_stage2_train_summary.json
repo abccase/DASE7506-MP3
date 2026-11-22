@@ -1,0 +1,154 @@
+{
+  "base_repo": "Qwen/Qwen3-0.6B",
+  "base_rev": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "data_path": "training_records/data/train_rich_v3.jsonl",
+  "dataset_stats": {
+    "count": 1833,
+    "truncated": 3,
+    "min_len": 277,
+    "median_len": 706,
+    "p95_len": 1333,
+    "max_len": 2048,
+    "median_target_len": 30,
+    "max_target_len": 120
+  },
+  "hyperparams": {
+    "data": "training_records/data/train_rich_v3.jsonl",
+    "out": "adapter",
+    "base_model": "models/Qwen3-0.6B",
+    "epochs": 1,
+    "max_steps": 0,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "max_len": 2048,
+    "accum": 16,
+    "rank": 32,
+    "alpha": 64,
+    "dropout": 0.05,
+    "dtype": "float16",
+    "mem_fraction": 0.48,
+    "resume": "training_records/checkpoints/v12_r32_ep1",
+    "enable_thinking": false,
+    "limit": 0,
+    "seed": 42,
+    "log_every": 15,
+    "save_every_epoch": true
+  },
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "peak_vram_gib": 1.842,
+  "total_steps": 115,
+  "elapsed_seconds": 1389.24,
+  "elapsed_minutes": 23.15,
+  "saved_adapters": [
+    {
+      "dir": "adapter",
+      "files": [
+        "adapter_config.json",
+        "adapter_model.safetensors"
+      ],
+      "num_tensors": 392,
+      "lora_params": 20185088,
+      "size_mib": 77.05,
+      "step": 115
+    }
+  ],
+  "history": [
+    {
+      "step": 1,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.1075,
+      "lr": 3.33e-05,
+      "peak_vram_gib": 1.568,
+      "reserved_vram_gib": 1.834,
+      "tok_per_sec": 1064.7,
+      "elapsed_min": 0.2,
+      "eta_min": 22.93
+    },
+    {
+      "step": 15,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0509,
+      "lr": 9.84e-05,
+      "peak_vram_gib": 1.811,
+      "reserved_vram_gib": 2.266,
+      "tok_per_sec": 696.3,
+      "elapsed_min": 4.33,
+      "eta_min": 28.88
+    },
+    {
+      "step": 30,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0472,
+      "lr": 8.91e-05,
+      "peak_vram_gib": 1.811,
+      "reserved_vram_gib": 2.27,
+      "tok_per_sec": 686.1,
+      "elapsed_min": 8.79,
+      "eta_min": 24.91
+    },
+    {
+      "step": 45,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0438,
+      "lr": 7.3e-05,
+      "peak_vram_gib": 1.811,
+      "reserved_vram_gib": 2.27,
+      "tok_per_sec": 745.1,
+      "elapsed_min": 12.42,
+      "eta_min": 19.32
+    },
+    {
+      "step": 60,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0414,
+      "lr": 5.32e-05,
+      "peak_vram_gib": 1.811,
+      "reserved_vram_gib": 2.27,
+      "tok_per_sec": 813.9,
+      "elapsed_min": 15.06,
+      "eta_min": 13.81
+    },
+    {
+      "step": 75,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0383,
+      "lr": 3.32e-05,
+      "peak_vram_gib": 1.84,
+      "reserved_vram_gib": 2.27,
+      "tok_per_sec": 893.7,
+      "elapsed_min": 17.13,
+      "eta_min": 9.14
+    },
+    {
+      "step": 90,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0249,
+      "lr": 1.68e-05,
+      "peak_vram_gib": 1.842,
+      "reserved_vram_gib": 2.27,
+      "tok_per_sec": 957.5,
+      "elapsed_min": 19.22,
+      "eta_min": 5.34
+    },
+    {
+      "step": 105,
+      "total_steps": 115,
+      "epoch": 1,
+      "loss": 0.0325,
+      "lr": 7e-06,
+      "peak_vram_gib": 1.842,
+      "reserved_vram_gib": 2.314,
+      "tok_per_sec": 996.8,
+      "elapsed_min": 21.6,
+      "eta_min": 2.06
+    }
+  ]
+}

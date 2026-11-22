@@ -1,0 +1,13 @@
+{
+  "max_hint_checks": 4,
+  "enable_variants": true,
+  "max_variant_checks": 2,
+  "enable_r0_reorder": true,
+  "pre_prune_hints": true,
+  "enable_db_probe": true,
+  "enable_fp_firewall": true,
+  "fp_risk_probe_threshold": 0.16,
+  "fp_risk_llm_threshold": 0.20,
+  "enable_schema_anchor": true,
+  "use_llm": false
+}

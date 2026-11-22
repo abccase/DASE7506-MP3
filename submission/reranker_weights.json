@@ -1,0 +1,33 @@
+{
+  "fitted_on": "train_480_only",
+  "n_candidates": 579,
+  "n_tp": 474,
+  "n_fp": 105,
+  "l2": 4.0,
+  "oof_db_grouped_auc": 0.8534,
+  "bias": 0.33277,
+  "weights": {
+    "ex_rows_0": -0.59392,
+    "ex_rows_1": -0.36528,
+    "is_draft": 0.16734,
+    "is_hint": -0.1419,
+    "is_repaired_or_llm": 0.25,
+    "suspicious_non_fk_joins": -0.87341,
+    "cross_type_joins": 0.0462,
+    "ungrounded_literals": -1.2658,
+    "literal_has_similar_in_col": -0.4357,
+    "literal_found_in_other_col": -0.24946,
+    "all_literals_grounded": 0.70644,
+    "ordered_missing_orderby": -0.04392,
+    "alphabetical_id_order": 0.0,
+    "extra_distinct_no_cue": -1.18127,
+    "missing_distinct_with_cue": -0.16678,
+    "negation_uses_neq_on_join": -0.07162,
+    "col_align_score": 1.53659,
+    "hint_vote_frac": 1.99778,
+    "matches_any_hint_ast": 0.47149,
+    "table_count_norm": -2.23551,
+    "has_empty_ref_table": -0.61258,
+    "has_left_join": 1.52638
+  }
+}

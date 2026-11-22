@@ -1,0 +1,7 @@
+MP3_SQL_student_package/
+models/
+adapter/
+__pycache__/
+*.py[cod]
+*.zip
+.venv/
